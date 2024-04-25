@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>글꼴 관련 스타일</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Black+And+White+Picture&family=East+Sea+Dokdo&display=swap" rel="stylesheet">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap');
+        /* zmrl eksdnl: %, em, px, rem.... */
+        
+        #fontsize p:nth-child(1) {font-style: normal; font-weight: normal; color: red; font-family: "East Sea Dokdo", sans-serif; font-size: 200%;
+  font-weight: 400;
+  font-style: normal;}
+        #fontsize p:nth-child(2) {/*font-size: 100%;*/ /*font-size: 1.0em;*/font-size: 30px; font-style: italic; font-weight: bold; color: rgb(101, 112, 141); 
+            font-family: "Black And White Picture", system-ui;
+  font-weight: 400;
+  font-style: normal; }
+        #fontsize p:nth-child(3) {/*font-size: 150%;*/ /*font-size: 1.5em;*/font-size: 24px; font-style: oblique; font-weight: bolder; background-color: rgba(255,0,0,0.1);} 
+        #fontsize p:nth-child(4) {/*font-size: 200%;*/ /*font-size: 2.0em;*/font-size: 36px; font-weight: 1000; background-color: #BAA8C2; 
+        text-align: center;
+        }
+        /* 공간분할
+        block : 줄 단위 공간, width, height 속성이 있음
+        inline: 열 단위 공간, width, height 속성이 없음
+        */
+        #box p {
+            width: 300px; height: 100px;
+            border: 1px solid red;
+            background-color: #95a397;
+            color: rgb(255,255,255);
+            text-align: center;
+            line-height: 100px;
+            text-decoration: line-through;
+            font-weight: 900;
+            /* 텍스트 그림자
+            x, y, 흐림정도, color
+            */
+            text-shadow: 1px 1px 1px black;
+            text-shadow: 0px 0px 5px black;
+
+            /* 대소문자 */
+            text-transform: lowercase;
+            text-transform: capitalize;
+            text-transform: uppercase;
+            /* 자간 */
+            letter-spacing: 0.07em;
+        }
+        #box i {
+            width: 300px; height: 100px; /*적용안됨*/ 
+            border: 1px solid blue;
+        }
+
+        #box a {text-decoration: none;}
+
+        table {
+            width: 500px;
+            border: 1px solid gray;
+            /* border-collapse: collapse; */
+        }
+         tr, th, td{
+            border: 1px dashed rgb(44, 112, 84);
+            text-align: center;
+            
+        }
+
+       
+
+    </style>
+   
+</head>
+<body>
+    
+        <table>
+            <caption>선물용 상품 구성</caption>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+            </tr>
+        </table>
+        <hr>
+        <div id="box">
+        <p>
+           HTML5/CSS
+            </p> 
+            <i>inline</i>
+            <a href="http://www.naver.com"  target="_blank">네이버</a>
+            
+    </div>
+    <hr>
+    <div id="fontsize">
+        <p>글꼴(바탕)Aliqua officia ut aliqua incididunt consequat non tempor sit duis ea minim est anim enim. </p>
+        <p>아이우에요Aliqua officia ut aliqua incididunt consequat non tempor sit duis ea minim est anim enim.</p>
+        <p>Aliqua officia ut aliqua incididunt consequat non tempor sit duis ea minim est anim enim.</p>
+        <p>Aliqua officia ut aliqua incididunt consequat non tempor sit duis ea minim est anim enim.</p>
+    </div>
+    
+</body>
+</html>

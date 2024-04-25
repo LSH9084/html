@@ -1,0 +1,53 @@
+@charset "UTF-8" ;
+
+* {
+    margin: 0 ;
+    padding: 0 ;
+    ul, li {
+        list-style: none;}
+    a { text-decoration: none;}
+}
+
+.head {
+    padding: 20px 30px;
+}
+
+.box1 {
+    display: flex;
+}
+
+.box1 a {
+    text-decoration: none;
+    color: black;
+}
+
+/* .box1 .left-img {
+    margin-right: auto;
+} */
+
+.box1 .right-img1 {
+    margin-left: auto;
+}
+
+.box1 .left-img { 
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.box1 .right-img {
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.logo img {
+    height: 100px;
+
+}
+
+.logo {
+    display: flex;
+}
+
+
+
+

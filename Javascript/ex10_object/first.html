@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>1페이지</h1>
+    <button class="btn1">이전</button>
+    <button class="btn2">다음</button>
+    <button class="btn7">ee</button>
+
+    <script>
+        btn1 = document.querySelector('.btn1')
+        btn2 = document.querySelector('.btn2')
+        btn7 = document.querySelector('.btn7')
+
+        btn1.addEventListener('click',()=>{
+            history.back(-1)
+        })
+
+        btn2.addEventListener('click',()=>{
+            history.forward(1)
+        })
+        btn7.addEventListener('click',()=>{
+    window.location.href = './first2.html'
+})
+    </script>
+</body>
+</html>

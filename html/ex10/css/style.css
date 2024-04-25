@@ -1,0 +1,161 @@
+@charset "UTF-8" ;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap'); 
+
+/* 초기화 */
+
+* {
+    margin: 0 ;
+    padding: 0 ;
+    ul, li {
+        list-style: none;}
+    a { text-decoration: none;}
+    }
+
+/* 속성에 대한 변수 활용 */
+/* 기본 색상 */
+:root {
+    --main-color: #5d9ab2;
+    --accent-color: #bf6a7a;
+    --dark-main-color: #2b5566;
+    --text-bright-color: #fff;
+    --icon-color: #fff;
+    --icon-bk-color: #ddd;
+    --larg-width: 768px;
+}
+
+body {
+    font-family: '맑은 고딕', 'Apple SD Gothic Neo', sans-serif;
+}
+
+/* 콘텐츠 A */
+
+.conA {
+    background-image:
+        linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), 
+        url(../img/fruits.jpg);
+    background-size: cover; /*그림의 가로에 맞춰 크기조절*/
+    background-position: center ;
+    height: 100vh;
+    min-height: 450px;
+    text-align: center;
+    border: 1px solid gray;
+    /* color: #fff; */
+    color: var(--text-bright-color); /*위의 root변수값 하나만 바꿔도 다 바꿀 수 있어서 씀*/
+    display: flex;
+    justify-content: center; /*가로정렬*/
+    align-items: center; /*세로정렬*/
+}
+
+.conA h1 {
+    margin-bottom: 10px;
+    font-size: 15vw; 
+    font-family: 'Montserrat',sans-serif ;
+    letter-spacing: 0.2em;
+    margin-left: 0.2em; 
+}
+
+.conA p {
+    font-size: 5.625vw;
+    
+}
+
+.conA img {
+    width: 20%;
+}
+
+.conA a {
+    background-color: var(--accent-color);
+    font-size: 14px;
+    color: var(--text-bright-color);
+    display: inline-block;
+    padding: 10px 30px;
+    border: 3px solid currentColor;  /*currentcolor=글자색이랑 동일한 색*/
+    border-radius: 6px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.conB > .container {
+    padding-top: 80px;
+    border: 1px solid blue;
+    padding-bottom: 20px;
+    text-align: center;
+    
+} 
+
+.conB h2 {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.conB p {
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 1.8;
+    opacity: 0.8;
+}
+
+.conB a {
+    color: var(--main-color);
+    
+}
+
+.conB a:hover {
+    text-decoration: underline;
+    transition: all 5s;
+}
+
+.conB .icon {
+    font-size: 40px;
+    width: 2em;
+    margin-bottom: 20px;
+    display: inline-block;
+    height: 2em;
+    text-align: center;
+    line-height: 2em;
+    color: var(--icon-color);
+    background-color: var(--icon-bk-color);
+    border-radius: 50%;
+}
+
+
+.conB  .text {
+    display: inline-block;
+    text-align: center;
+    padding-bottom: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
+    
+}
+
+
+
+
+
+@media(min-width:768px){
+   .conB .container {
+    /* 수직이 수평이됨 */
+    display: flex;
+    max-width: var(larg-width);
+    margin-left: auto;
+    margin-right: auto;
+   } 
+    .conB .text {
+        flex: 1;
+    }
+}
+
+
+
+
+
+
+
+@media (min-width:768px) {
+    .conA h1 {
+        font-size: 115px;
+    }
+    .conA p {
+        font-size: 24px;
+    }
+}

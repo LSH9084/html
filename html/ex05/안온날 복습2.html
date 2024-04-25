@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>스타일 02</title>
+    <style>
+        #rint{color: aqua;}
+        .sel {color: aquamarine; }
+        .sel2 {background-color: brown;}
+        .sel3 {font-size: 24px;}
+        input[type="text"] {background-color: rgb(126, 38, 118);}
+        input[type="password"] {background-color: blueviolet;}
+
+        /* 후손 선택자: 선택자A  선택자B */
+    #header  h1 { color : red;}
+    #section  h1 { color: orange;}
+
+    /* 자손 선택자: 선택자A > 선택자B */
+    /* #header > h1 { color : red;}
+    #section > h1 { color: orange;} */
+
+    /* table > tbody > tr > th { color : blueviolet;} */
+    table  th { color : blueviolet;}
+
+    /* 반응 선택자 */
+    table th:hover { color: gray;}<!-- 마우스가 올라왔을 때-->
+    table th:active { color: rgb(228, 83, 182);}<!-- 누르고 있을 때-->
+        
+    </style>
+</head>
+<body>
+    <table border="1" width="100" >
+        <tr>
+            <th></th>
+            <th></th>
+        </tr>
+    
+    </table>
+    
+</body>
+</html>

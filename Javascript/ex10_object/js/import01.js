@@ -1,0 +1,1 @@
+console.log('script객체가 생성되었습니다.')

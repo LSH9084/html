@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+     .box {
+        /*배치방식을 flexbox layout 방식으로 전환*/
+        display: flex;
+        /* flex의 기본값 row nowrap */
+        /* flex-direction: column; */
+        flex-flow: nowrap;
+        
+
+        border: 1px solid black;
+        width: 300px;
+        height: 500px;
+        /* margin-left: auto;
+        margin-right: auto; block상태에서의 수평정렬방법 */
+        /* flex-direction: row-reverse; */
+        justify-content: flex-start; /*수평*/
+        align-items: flex-start; /*수직*/
+
+    }
+
+    .box1-1 {
+        flex: 1;
+        flex: 0 0 100px;
+        background: #e64646;
+        width: 100px; 
+        height: 100px;
+    }
+
+    .box1-2 {
+        flex: 2;
+        flex: 0 0 200px;
+        background: #5b3fc0;
+        width: 100px;
+        height: 100px;
+    }
+    .box1-3 {
+        flex: 0 0 100px;
+        flex: 1;
+        background: #229485;
+        width: 100px;
+        height: 100px;
+    } 
+
+    .nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    ul a {
+        text-decoration: none;
+        color: #5b3fc0;
+    }
+
+    .nav ul {
+        display: flex;
+    }
+
+    .nav ul li {
+        flex: 0 0 70px; /*확대 축소 비율너피*/
+    }
+
+    .nav ul a {
+        display: block;
+        text-align: center;
+    }
+
+    .nav ul a:hover {
+        text-decoration: underline;
+    }
+
+
+
+
+
+
+</style>
+<body>
+    <!-- <h1>기본레이아웃 : inline, block</h1>
+    <div class="box">box1
+        <div class="box1-1">box1-1</div>
+        <div class="box1-2">box1-2</div>
+        <div class="box1-3">box1-3</div>
+    </div>
+    <div>box2
+        <div>box2-1</div>
+    </div> -->
+
+
+    <div class="nav">
+
+        <h2>flex를 이용한 메뉴</h2>
+        <ul>
+            <li><a href="#">메일</a></li>
+            <li><a href="#">카페</a></li>
+            <li><a href="#">블로그</a></li>
+            <li><a href="#">쇼핑</a></li>
+            <li><a href="#">뉴스</a></li>
+        </ul>
+    </div>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #first { color: rgb(98, 139, 129); }
+        #first > h2 {color: aqua;}
+        .sty1e1 {color: rgb(141, 11, 11);}
+        .sty1e2 {font-size: 24px;}
+        .sty1e3 {background-color: rgb(171, 171, 187);}
+
+        ul { list-style: none;}
+        #list { border: 1px solid blue;}
+        #list > ul > li > span {color: red;}
+        #list h1:hover {color: red;}
+        #list h1:active {background-color: rgb(59, 105, 80);}
+
+         
+         /* 상태 선택자
+         :checked, :focus, :disabled, :enabled  */
+         
+        input:enabled {background-color : rgb(72, 87, 173);}
+        input:disabled {color: brown;}
+
+        /* 구조선택자(많이씀)
+         :first-child, :last-child, :nth-child(), :nth-last-child()
+        */
+
+        #nth > p:first-child { color: red;}
+        #nth > p:last-child { color: aqua;}
+        #nth > p:nth-child(3) {color: gray;}
+        #nth > p:nth-child(n) {font-size: 50px;}
+        #nth > p:nth-child(2n) {background-color: aquamarine; }
+        #nth > p:nth-child(2n+1) {background-color: rgb(8, 81, 145);}
+
+    </style>
+</head>
+<body>
+    
+    <div id="nth">
+        <p>test-1</p>
+        <p>test-2</p>
+        <p>test-3</p>
+        <p>test-4</p>
+        <p>test-5</p>
+    </div>
+    <div id="status">
+        활성화 : <input type="text"> <br>
+        비활성화 : <input type="text" disabled value="disabled상태임">
+
+    </div>
+
+    <hr>
+    <div id="first">
+        <h1>제목1</h1>
+        <h2>제목2</h2>
+        <h3>제목3</h3>
+    </div>
+    <div id="second">
+        <p class="sty1e1">Consequat non duis ex et ad.</p>
+        <p class="sty1e1 sty1e2">Irure laboris ipsum mollit exercitation amet.</p>
+        <p class="sty1e1 sty1e2 sty1e3">Commodo nulla sunt labore non aliquip aute consequat mollit quis sunt aliquip.</p>
+    </div>
+    <hr>
+    <div id="list">
+        <ul>
+            <li>목록-1
+                <span>하위요소1
+                    <span>하위요소2</span>
+                </span>
+            </li>
+            <li>목록-2</li>
+            <h1>hover 상태</h1>
+            <li>목록-3</li>
+            <h1>active 상태</h1>
+            <li>목록-4</li>
+        </ul>
+    </div>
+</body>
+</html>

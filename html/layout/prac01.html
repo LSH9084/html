@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        text-decoration: none;
+        list-style: none;
+    }
+   
+    footer {
+        color: white;
+        background-color: darkgray;
+        
+    }
+
+    footer .container {
+        padding: 40px 20px;
+    }
+
+    .footA h2 {
+        margin-bottom: 10px;
+        font-size: 30px;
+        letter-spacing: 0.2em;
+    }
+
+    .footA p {
+        font-size: 14px;
+
+    }
+
+    .footA a {
+        color: inherit;
+
+    }
+
+    .footA {
+        margin-bottom: 30px;
+    }
+
+    .footB h3 {
+        border: 1px solid currentColor;
+        margin-bottom: 10px;
+        padding-left: 2px ;
+        padding-bottom: 2px;
+        font-size: 14px;
+    }
+
+    .footB a {
+        color: inherit;
+        font-size: 12px;
+        display: block;
+        padding: 5px;
+    }
+
+
+    .footB a:hover {
+        background-color: rgba(0,0,0,0.3);
+    }
+
+    .footB div{
+        margin-bottom: 10px;
+    }
+
+    .footC {
+        font-size: 12px;
+        text-align: center;
+    }
+
+    @media(min-width:768px) {
+        footer .container {
+            max-width: 1000px;
+            border: 1px solid red;
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            flex-wrap: wrap;
+            
+
+        }
+        .footA {flex: 0 0 40%;}
+        .footB {flex: 0 0 60%;}
+        .footC {flex: 0 0 100%;}
+        .footB {display: flex;}
+        .footB div {
+            flex:1;
+        }
+        .footB div:not(:first-child){
+            margin-left: 40px;
+        }
+        .footB ul {
+            padding-inline-start: 0px;
+        }
+    }
+
+
+    
+</style>
+<body>
+    <section class="A">
+        
+        <footer>
+            <div class="container">
+                <div class="footA">
+                    <h2>LOGGER</h2>
+                    <p>주소: 더 조은 아카데미</p>
+                    <a href="https://bs.tjoeun.co.kr">https://bs.tjoeun.co.kr</a>
+                </div>
+
+            
+
+                <div class="footB">
+                    <div>
+                    <h3>ABOUT</h3>
+                        <ul>
+                            <li><a href="#">설립</a></li>
+                            <li><a href="#">주소</a></li>
+                            <li><a href="#">지도</a></li>
+                            <li><a href="#">스태프</a></li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3>SUPPORT</h3>
+                        <ul>
+                            <li><a href="#">다운로드</a></li>
+                            <li><a href="#">매뉴얼</a></li>
+                            <li><a href="#">자주 묻는 질문</a></li>
+                            <li><a href="#">문의</a></li>
+                        </ul>
+                    </div>
+
+                    <div>
+                    <h3>CONTENTS</h3>
+                        <ul>
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">비즈니스</a></li>
+                            <li><a href="#">프로필</a></li>
+                            <li><a href="#">개발자</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="footC">
+                    &copy; LOGGER corp. ALL rights reserved
+                </div>
+        </div>
+        </footer>
+
+    </section>
+</body>
+</html>

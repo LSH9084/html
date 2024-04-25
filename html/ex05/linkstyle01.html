@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* 
+        :link링크상태, :visited방문상태, :hover올렸을때, :active눌렀을때 :focus 선택한 후
+        */
+        .navi ul li {
+            list-style: none;
+            float: left; /*수직 -> 수평*/
+            width: 150px;
+            padding: 10px ;
+            
+            /* border: 1px solid #222; */
+        }
+
+        .navi a:link, 
+        .navi a:visited{
+            display: block;
+            font-size: 14px;
+            color: #000;
+            padding: 10px;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .navi a:hover,
+        .navi a:focus {
+            background-color: #222;
+            color: #fff;
+        }
+
+        .navi a:active {
+            background-color: red;
+        }
+
+        section {
+            clear: both; /*float 해제*/
+        }
+
+        .contents {
+            width: 400px;
+            margin: 30px auto;
+            border: 1px solid #222;
+            padding: 20px;
+            border-radius: 5px;
+
+        }
+
+        #intro:target {
+            background-color: #0069e0;
+            color: #fff;
+        }
+
+        #room:target {
+            background-color: aqua;
+            color: bisque;
+        }
+
+        #reservation:target {
+            background-color: black;
+            color: #fff;
+        }
+
+        /* :target 가상 클래스 -> 앵커의 목적지가 되는 부분의 스타일 적용*/
+        input:checked + label {
+            color: red;
+            font-weight: bold;
+        }
+
+        input:not([type=radio]):hover {
+            border-color: blue;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav class="navi">
+            <ul>
+                <li><a href="#intro">이용 안내</a></li>
+                <li><a href="#room">객실 소개</a></li>
+                <li><a href="#reservation">예약 방법 및 요금</a></li>
+                <li><a href="fontstyle01.html">예약하기</a></li>
+            </ul>
+        </nav>
+        
+        <section>
+            <div id="intro" class="contents">
+                <h2>이용안내</h2>
+                <p>Nisi aliqua dolor anim reprehenderit id. Esse cupidatat velit laboris non nostrud labore cillum. Ut esse esse ex consectetur dolor reprehenderit magna elit proident. Voluptate exercitation ut veniam sint reprehenderit non incididunt tempor cupidatat exercitation ad.Exercitation proident qui elit officia deserunt enim veniam esse magna aute dolor nostrud laborum.</p>
+            </div>
+            <div id="room" class="contents">
+                <h2>객실 소개</h2>
+                <p>Pariatur proident anim tempor sit dolor elit qui duis proident cupidatat nulla nulla proident. In voluptate in tempor enim consequat anim dolor non reprehenderit commodo cupidatat veniam voluptate. Incididunt sit veniam eu ex elit ipsum id quis deserunt proident deserunt voluptate voluptate voluptate. Enim ullamco irure aliqua in proident incididunt amet. Quis tempor labore proident labore nostrud velit dolore duis ex cillum eu. Sit sunt ad aliqua irure deserunt labore velit aliquip deserunt. Ea aliqua eiusmod ipsum ea officia cillum excepteur anim.Incididunt ad laboris ullamco eu ipsum.</p>
+            </div>
+            <div id="reservation" class="contents">
+                <h2>예약 방법 및 요금</h2>
+                <p>Esse eiusmod nostrud minim ad cillum ad.Enim adipisicing ea nostrud occaecat id mollit in. Culpa id ipsum ullamco ea ad non sint et in. Elit minim adipisicing qui mollit aliqua. Voluptate tempor ullamco irure ex aliquip labore incididunt sit esse sit enim.</p>
+            </div>
+        </section>
+
+        <div id="check">
+    <fieldset>
+        <legend>객실형태</legend>
+            <ul>
+                <li>
+                    <input type="radio" name="room" id="basic">
+                    <label for="basic">기본형(최대2인)</label></li>
+                <li>
+                    <input type="radio" name="room" id="family">
+                    <label for="family">가족형(최대8인)</label></li>
+            </ul>
+        
+    </fieldset>
+            
+        </div>
+
+    </div>
+    
+</body>
+</html>
