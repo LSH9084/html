@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>노드 추가/삽입</title>
+    <style>
+        * {
+            text-align: center;
+        }
+        .list {
+            list-style: none;
+            display: flex;
+            width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        li, p {
+            border: 1px solid black;
+            width: 100px;
+            text-align: center;
+            background-color: pink;
+            margin-top: 10px;
+            list-style: none;
+            margin-left: 10px;
+        }
+
+        .kk ul {
+            display: flex;
+            width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+<body>
+    <h3>판매과일</h3>
+    <div class="kk">
+        <ul>
+            <p>수박</p>
+            <p>참외</p>
+            <p>복숭아</p>
+            <p>키위</p>
+            <p>멜론</p>
+            <p>오렌지</p>
+            <p>귤</p>
+            <p>한라봉</p>
+            <p>청포도</p>
+            <p>포도</p>
+            <p>배</p>
+            <p>파인애플</p>
+            <p>사과</p>
+        </ul>
+    </div>
+    <h3>부모노드에 자식 요소 추가, 삽입</h3>
+    <hr>
+    <div class="parent">
+        <label for="">항목내용 : <input type="text" id="input" placeholder="과일명입력">
+        </label>
+        <button id="add">추가</button>
+        <button id="remove">삭제</button>
+        <button id="down">모두삭제</button>
+    </div>
+    <hr>
+    <h3>장바구니</h3>
+    <div>
+        <ul class="list">
+            <!-- <li></li> -->
+        </ul>
+    </div>
+
+
+    
+    <script src="./js/node_test2.js"></script>
+</body>
+</html>

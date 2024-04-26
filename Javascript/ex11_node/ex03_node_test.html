@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>요소(node)가져오기</title>
+    <style>
+        .numbers > li {
+            margin: 3px; padding: 5px;
+            border: 1px solid rgb(208,99,99);  
+            flex:1; 
+            list-style: none;
+            text-align: center;
+
+        }
+        .numbers {
+            display: flex;
+            margin: 0; padding: 0;
+        }
+        .nodes {
+            width: 300px; 
+            border: 1px solid purple;
+        }
+
+        #buttons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <h3>Node read</h3>
+    <hr>
+    <div id="buttons">
+        <button id="btn1">첫번째 자식노드</button>
+        <button id="btn2">마지막 자식노드</button>
+        <button id="btn3">다음 노드</button>
+        <button id="btn4">이전노드</button>
+        <button id="btn5">부모노드</button>
+    </div>
+    <hr>
+    <div class="nodes">
+        <ul class="numbers">
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+        </ul>
+    </div>
+    <script src="./js/node_test.js"></script>
+</body>
+</html>
