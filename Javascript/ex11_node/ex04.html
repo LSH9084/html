@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>복습</title>
+    <style>
+        * {
+            text-align: center;
+        }
+        .list {
+            list-style: none;
+            display: flex;
+            width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        li, p {
+            border: 1px solid black;
+            width: 100px;
+            text-align: center;
+            background-color: pink;
+            margin-top: 10px;
+            list-style: none;
+            margin-left: 10px;
+        }
+
+        .kk ul {
+            display: flex;
+            width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+<body>
+</div>
+<h3>부모노드에 자식 요소 추가, 삽입</h3>
+<hr>
+<div class="parent">
+    <label for="">항목내용 : <input type="text" id="input" placeholder="과일명입력">
+    </label>
+    <button id="add">추가</button>
+    <button id="remove">삭제</button>
+    <button id="clear">모두삭제</button>
+    <div class="prev_next">
+        <button id="prev">앞으로</button>
+        <button id="next">뒤로</button>
+    </div>
+</div>
+<hr>
+<h3>장바구니</h3>
+<div>
+    <ul class="list">
+        <li>사과</li>
+        <li>사과</li>
+        <li>사과</li>
+    </ul>
+    <script src="./js/04.js"></script>
+</body>
+</html>

@@ -60,3 +60,51 @@ function reload(){
 listRemove()
 ttr()
 reload()
+
+const upp = document.querySelector('#prev')
+const downn = document.querySelector('#next')
+const prev_next = document.querySelectorAll('.prev_next button')
+console.log(prev_next)
+
+for ( let button of prev_next){
+    console.log(button)
+    button.addEventListener('click',(e)=>{
+        console.log(e.target.id)
+        const listt = document.querySelectorAll('.list li')
+        const isZero = listt.length
+        if(isZero > 0 ){
+            listt.forEach((r)=>{
+                let rname = r.innerHTML
+                if (rname == input.value.trim()){
+                    console.log(r)
+                    if(e.target.id == 'prev'){
+                        let prevr = r.previousElementSibling
+                        prevr.before(r)
+                    } else {
+                        let nextr = r.nextElementSibling
+                        nextr.after(r)
+                    }
+                }
+            })
+        }
+        
+    })
+}
+
+// const li = document.querySelectorAll('li')
+// const lil = [...li]
+
+
+// lil.forEach((e)=>{
+    
+//     console.log(e)
+//     e.addEventListener('click',()=>{
+//         const tht = lil.length
+//         if(tht > 0){
+//             let thte = e.previousElementSibling
+//             console.log(thte)
+//             thte.before(e)
+            
+//         }
+//     })
+// })

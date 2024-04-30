@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>클래스 속성 다루기</title>
+    <style>
+        .box{
+            border: 1px solid blue;
+            margin: 20px;
+            padding: 20px;
+        }
+
+        .small_box{
+            border: 1px dotted red;
+            margin: 50px;
+            padding: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h3>클래스 속성 추가,삭제,유무</h3>
+    <hr>
+    <div class="class_box">
+        <button id="add">class 추가</button>
+        <button id="remove">class 삭제</button>
+        <button id="toggle">class 토글</button>
+        <br>
+        <div id="box1" class="red">자식박스1</div>
+        <div id="box2" class="blue">자식박스2</div>
+    </div>
+    <script src="./js/claList.js"></script>
+</body>
+</html>
