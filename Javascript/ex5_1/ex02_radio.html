@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>라디오 버튼 객체</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        .container div {
+            border: 5px solid gainsboro;
+            margin: 20px;
+            padding: 10px;
+        }
+        li {
+            list-style: none;
+        }
+        .result1 {
+            height: 100px;
+        }
+        .row div {
+            margin-left: 65px;
+        }
+        .first div {
+            margin-left: auto;
+            margin-right: auto;
+        }
+        #radioForm div{
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container first">
+        <div class="box2 w-25">
+            <select class="form-select" id="mySel">
+                <option value="apple">Apple</option>
+                <option value="orange">Orange</option>
+                <option value="grape">Grape</option>
+              </select>
+              <select class="form-select" multiple  id="mySel2"></select>
+        </div>
+        <div class="row">
+            <div class="result1 alert alert-warning mt-3 log w-25 col-3"></div>
+            <div class="result3 alert alert-warning mt-3 log w-25 col-3"></div>
+            <div class="result alert alert-warning mt-3 log w-25 col-3"></div>   
+        </div>
+    </div>
+    <hr>
+    <div class="container">
+        <form id="radioForm">
+            <div class="radio_group1 form-check w-25">
+                <label class="form-check-label m-3">
+                    <input checked type="radio" name="fruit" id="apple" value="apple" class="btn form-check-input">Apple
+                </label>
+                <label class="form-check-label m-3">    
+                    <input type="radio" name="fruit" id="orange" value="orange" class="btn form-check-input">Orange
+                </label>
+                <label class="form-check-label m-3">   
+                    <input type="radio" name="fruit" id="grape" value="grape" class="btn form-check-input">Grape
+                </label>
+            </div>
+            <div class="radio_group1 form-check w-25">
+                <label class="form-check-label m-3">
+                    <input checked type="radio" name="drink" value="coke" id="coke" class="btn form-check-input">Coke
+                </label>
+                <label class="form-check-label m-3">    
+                    <input type="radio" name="drink" id="wine" value="wine" class="btn form-check-input">Wine
+                </label>
+            </div>
+        </form>
+    </div>
+
+    </div>
+    <script src="./js/radio.js"></script>
+</body>
+</html>
