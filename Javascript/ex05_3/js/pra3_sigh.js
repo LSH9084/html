@@ -101,10 +101,3 @@ function emailCheck(email_address){
 	}
 }
 
-
-
-
-
-
-
-
