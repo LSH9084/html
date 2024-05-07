@@ -13,7 +13,7 @@ function parseData(response){
     apiResultData.errorMessage = response.errorMessage
     apiResultData.username = response.user_name
     // apiResultData.age = response.age
-    console.log(apiResultData)
+    console.log(apiResultData,apiResponse)
 }
 const apiResponse = {
     result : true,

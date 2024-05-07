@@ -41,6 +41,5 @@ student.myTot()
 student.myAvg()
 
 console.log(student2.myAA(),student.myAA())
-student.name = '동길이'
-console.log(student2.myAA(),student.myAA())
+
 

@@ -6,15 +6,15 @@ class MyClass {
     //     console.log('클래스 생성될 때 1번 수행됩니다.')
     // }
     //인자가 있는 생성자
-    constructor(a,b,c){
-        console.log(a,b,c)
-    }
-    // 생성자로 멤버변수 정의
-    // constructor(a='황',b=13,c='blue'){
-    //     this.name = a
-    //     this.age = b
-    //     this.color = c
+    // constructor(a,b,c){
+    //     console.log(a,b,c)
     // }
+    // 생성자로 멤버변수 정의
+    constructor(a='황',b=13,c='blue'){
+        this.name = a
+        this.age = b
+        this.color = c
+    }
 }
 
 // const obj1 = new MyClass()

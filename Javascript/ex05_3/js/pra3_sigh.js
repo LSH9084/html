@@ -101,3 +101,7 @@ function emailCheck(email_address){
 	}
 }
 
+const prev = document.querySelector('.prev')
+prev.addEventListener('click',()=>{
+    window.open('./practice_sign.html','_self')
+})

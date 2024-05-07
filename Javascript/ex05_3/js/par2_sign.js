@@ -75,3 +75,7 @@ function allChkFun(e){
     }
 }
 
+next.addEventListener('click',()=>{
+    window.open('./practice_sign2.html','_self')
+})
+
