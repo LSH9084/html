@@ -1,15 +1,16 @@
 const bb = {
     name:"홍길동",
-    kor:100,
+    kor:30,
     eng:20,
     mat:50,
     totFun : function(){
-        console.log(this.kor+this.mat+this.eng)
+        return(this.kor+this.mat+this.eng)
     },
     avgFun : function(){
-        console.log((this.kor+this.eng+this.mat)/3)
+        return((this.kor+this.eng+this.mat)/3)
     }  
 }
 
-console.log(bb.totFun())
+console.log("이름:",bb.name,"총점:",bb.totFun(),"평균:",bb.avgFun())
+
 

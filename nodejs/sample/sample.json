@@ -1,0 +1,8 @@
+ {
+    "age": 40,
+    "grade": 4,
+    "classes": [
+        {"name":"홍길동","address":"busan"},
+        {"name":"강감찬","address":"ulsan"}
+    ]
+}

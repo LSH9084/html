@@ -7,22 +7,22 @@ for (let i=0; i<num.length; i++){
     sum += num[i]
 }
 
-console.log(sum)
+console.log("for(제어문): sum=",sum)
 
 sum = 0
 for(let e of num){
     sum += e
 }
 
-console.log(sum)
+console.log("for(변수 of 배열) :sum=",sum)
 
 sum = 0
 var num1 = [...num]
 num1.forEach((e)=>{
     sum += e
 })
-console.log(sum)
+console.log("배열.forEach :sum=",sum)
 
 sum = 0
 
-console.log(num1.reduce((sum)=> sum += sum ))
+console.log("배열.reduce() :sum =>",num1.reduce((a,b)=> a+b))

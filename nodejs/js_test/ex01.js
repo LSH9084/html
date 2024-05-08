@@ -19,6 +19,7 @@ var Picture2 = {
         console.log('이름: '+name+", 나이: "+age)
     }
 }
+Picture2.height = 100
 console.log(Picture2)
 console.log(Picture2.name , Picture2.age, Picture2.info(), Picture2.info2("강감찬",12))
 
