@@ -5,8 +5,23 @@ const allInput_len = allInput.length
 const inputVas = document.querySelectorAll('.inputva label')
 const sign_up = document.querySelector('#sign_up')
 const form = document.querySelector('.form')
+const name1 = document.querySelector('.name1')
+const pss1 = document.querySelector('.psd1')
+console.log(name1,pss1)
+sign_up.addEventListener('click',()=>{
+    var realId = name1.value
+    var realPs = pss1.value
+    set_cookie(realId)
+    set_cookie2(realPs)
+    window.open('../ex05_8/login.html')
+})
 
-
+function set_cookie(realId){
+    document.cookie = `realId = "${realId}";path=/`
+}
+function set_cookie2(realPs){
+    document.cookie = `realPs = "${realPs}";path=/`
+}
 
 inputVal2.addEventListener('focus',(e)=>{
     var rN = []
@@ -103,6 +118,8 @@ function emailCheck(email_address){
 		return true;
 	}
 }
+
+
 
 const prev = document.querySelector('.prev')
 prev.addEventListener('click',()=>{
