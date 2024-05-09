@@ -1,0 +1,13 @@
+{
+  "name": "chap01",
+  "version": "1.0.0",
+  "description": "haha",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "lsh",
+  "license": "ISC",
+  "type": "module"
+}

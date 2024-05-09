@@ -4,6 +4,9 @@ const allInput = document.querySelectorAll('.input label')
 const allInput_len = allInput.length
 const inputVas = document.querySelectorAll('.inputva label')
 const sign_up = document.querySelector('#sign_up')
+const form = document.querySelector('.form')
+
+
 
 inputVal2.addEventListener('focus',(e)=>{
     var rN = []
