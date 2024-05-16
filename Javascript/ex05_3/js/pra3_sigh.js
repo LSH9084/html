@@ -13,7 +13,7 @@ sign_up.addEventListener('click',()=>{
     var realPs = pss1.value
     set_cookie(realId)
     set_cookie2(realPs)
-    window.open('../ex05_8/login.html')
+    window.open('../ex05_8/login2.html')
 })
 
 function set_cookie(realId){

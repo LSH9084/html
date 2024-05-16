@@ -1,0 +1,10 @@
+$(function(){
+    var box1 = $('.box1 div')
+    box1.eq(2).before('<div>내용3 Before</div>')
+    box1.eq(1).after('<div>내용2 After</div>')
+    box1.eq(1).before('<div>내용2 Before</div>')
+    box1.eq(0).append('<div>내용1 Append</div>')
+    box1.eq(1).prepend('<div>내용2 Prepend</div>')
+    // box1.eq(1).remove()
+    box1.empty()
+})

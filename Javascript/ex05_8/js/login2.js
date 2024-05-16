@@ -77,12 +77,16 @@ function get_cookie(){
 
 email_inp.addEventListener('focus',(e)=>{
     const cookie_value = get_cookie()
-    email_inp.value = cookie_value.emailId
+    if(cookie_value.emailId != null){
+        email_inp.value = cookie_value.emailId
+    }
 })
 
 ps_inp.addEventListener('focus',()=>{
     const cookie_value = get_cookie()
-    ps_inp.value = cookie_value.psId
+    if(cookie_value.psId != null){
+        ps_inp.value = cookie_value.psId
+    }
 })
 
 window.addEventListener('load',()=>{

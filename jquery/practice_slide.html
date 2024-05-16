@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <style>
+        .slide-show {
+            position: absolute; 
+            left:-0px;
+            width: 500px;
+            height: 800px;
+            display: flex;
+            padding: 0;
+            margin: 0;
+        }
+        .slide{
+            flex: 0 0 500px;
+            padding: 0;
+            margin: 0;
+            /* background-color: bisque; */
+        }
+        
+        .container {
+            position: relative;
+            border: 4px solid black;
+            width: 500px;
+            height: 800px;
+            margin-right: auto;
+            margin-left: auto;
+            padding: 0;
+            overflow: hidden;
+        }
+        .slide3 {
+            text-align: center;
+        }
+        .header_img {
+            padding-left: 150px;
+        }
+        .G1, .G2 {
+            color: rgb(128, 184, 248);
+        }
+        .O1, .E1 {
+            color: rgb(245, 124, 124);
+        }
+        .O2 {
+            color: rgb(218, 155, 39);
+        }
+        .L1 {
+            color: rgb(142, 214, 33);
+        }
+        .second h4,h5 {
+            padding-right: 20px;
+        }
+        .chk_box {
+            display: flex;
+            justify-content: space-between;
+        }
+        .id_save {
+            text-align: left;
+            /* padding-left: 64px; */
+        }
+        .email {
+            width: 400px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .footer {
+            display: flex;
+            justify-content: space-between;
+        }
+        .slide1 div {
+            width: 400px;
+        }
+        .allclick {
+            text-align: center;
+            margin-left: 40px;
+            margin-top: 40px;
+        } 
+        
+        .btn1, .btn2, .allChk, .box3 {
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .box3 {
+            text-align: center;
+            
+        }
+        .box3 button {
+            width: 400px;
+            height: 50px;
+        }
+        .box3 a {
+            text-decoration: none;
+            color: black;
+        }
+        .slide2 .container div{
+            width: 400px;
+        }
+        .si {
+            text-align: center;
+            margin-left: 36px;
+            padding-top: 40px;
+            /* padding-bottom: 60px; */
+        }
+        .slide2 label {
+            width: 210px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+        .input, .inputva {
+            display: block;
+            margin-left: 40px;
+        }
+        .footer2 {
+            width: 400px;
+            display: flex;
+            justify-content: space-around;
+            margin-left: 50px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="slide-show">
+            <div class="slide slide1">
+                <form action="" id="form">
+                    <div class="allclick">
+                        <label for=""><input type="checkbox">전체 동의하기</label>
+                        <p>실명 인증된 아이디로 가입, 위치기반서비스 이용약관(선택), 이벤트・혜택 정보 수신(선택) 동의를 포함합니다.</p>
+                    </div>
+                    <div class="btn1">
+                        <label for=""><input class="btns" type="checkbox">[필수] 네이버 이용약관</label><br>
+                        <textarea class="mb-3" cols="50" name="" id="1">여러분을 환영합니다.
+                            네이버 서비스 및 제품(이하 ‘서비스’)을 이용해 주셔서 감사합니다. 본 약관은 다양한 네이버 서비스의 이용과 관련하여 네이버 서비스를 제공하는 네이버 주식회사(이하 ‘네이버’)와 이를 이용하는 네이버 서비스 회원(이하 ‘회원’) 또는 비회원과의 관계를 설명하며, 아울러 여러분의 네이버 서비스 이용에 도움이 될 수 있는 유익한 정보를 포함하고 있습니다.
+                            
+                            네이버 서비스를 이용하시거나 네이버 서비스 회원으로 가입하실 경우 여러분은 본 약관 및 관련 운영 정책을 확인하거나 동의하</textarea><br>
+                        <label for=""><input class="btns" type="checkbox">[필수] 개인정보 수집 및 이용</label><br>
+                        <textarea class="mb-3" cols="50" name="" id="2">여러분을 환영합니다.
+                            네이버 서비스 및 제품(이하 ‘서비스’)을 이용해 주셔서 감사합니다. 본 약관은 다양한 네이버 서비스의 이용과 관련하여 네이버 서비스를 제공하는 네이버 주식회사(이하 ‘네이버’)와 이를 이용하는 네이버 서비스 회원(이하 ‘회원’) 또는 비회원과의 관계를 설명하며, 아울러 여러분의 네이버 서비스 이용에 도움이 될 수 있는 유익한 정보를 포함하고 있습니다.
+                            
+                            네이버 서비스를 이용하시거나 네이버 서비스 회원으로 가입하실 경우 여러분은 본 약관 및 관련 운영 정책을 확인하거나 동의하</textarea><br>
+                    </div>
+                    <div class="btn2">
+                        <label for=""><input class="btns" type="checkbox">[선택] 실명 인증된 아이디로 가입</label><br>
+                        <textarea class="mb-3" cols="50" name="" id="3">여러분을 환영합니다.
+                            네이버 서비스 및 제품(이하 ‘서비스’)을 이용해 주셔서 감사합니다. 본 약관은 다양한 네이버 서비스의 이용과 관련하여 네이버 서비스를 제공하는 네이버 주식회사(이하 ‘네이버’)와 이를 이용하는 네이버 서비스 회원(이하 ‘회원’) 또는 비회원과의 관계를 설명하며, 아울러 여러분의 네이버 서비스 이용에 도움이 될 수 있는 유익한 정보를 포함하고 있습니다.
+                            
+                            네이버 서비스를 이용하시거나 네이버 서비스 회원으로 가입하실 경우 여러분은 본 약관 및 관련 운영 정책을 확인하거나 동의하</textarea><br>
+                        <label for=""><input class="btns" type="checkbox">[선택] 위치기반서비스 이용약관</label><br>
+                        <textarea class="mb-3" cols="50" name="" id="4">여러분을 환영합니다.
+                            네이버 서비스 및 제품(이하 ‘서비스’)을 이용해 주셔서 감사합니다. 본 약관은 다양한 네이버 서비스의 이용과 관련하여 네이버 서비스를 제공하는 네이버 주식회사(이하 ‘네이버’)와 이를 이용하는 네이버 서비스 회원(이하 ‘회원’) 또는 비회원과의 관계를 설명하며, 아울러 여러분의 네이버 서비스 이용에 도움이 될 수 있는 유익한 정보를 포함하고 있습니다.
+                            
+                            네이버 서비스를 이용하시거나 네이버 서비스 회원으로 가입하실 경우 여러분은 본 약관 및 관련 운영 정책을 확인하거나 동의하</textarea><br>
+                        <label for=""><input class="btns" type="checkbox">[선택] 개인정보 수집 및 이용 전체</label><br>
+                        <textarea class="mb-3" cols="50" name="" id="5">여러분을 환영합니다.
+                            네이버 서비스 및 제품(이하 ‘서비스’)을 이용해 주셔서 감사합니다. 본 약관은 다양한 네이버 서비스의 이용과 관련하여 네이버 서비스를 제공하는 네이버 주식회사(이하 ‘네이버’)와 이를 이용하는 네이버 서비스 회원(이하 ‘회원’) 또는 비회원과의 관계를 설명하며, 아울러 여러분의 네이버 서비스 이용에 도움이 될 수 있는 유익한 정보를 포함하고 있습니다.
+                            
+                            네이버 서비스를 이용하시거나 네이버 서비스 회원으로 가입하실 경우 여러분은 본 약관 및 관련 운영 정책을 확인하거나 동의하</textarea><br>
+                    </div>
+                    <div class="box3">
+                        <button class="btn btn-secondary" type="button"  id="next_btn1">다음</button>
+                        </div>
+                </form>
+            </div>   
+        <div class="slide slide2">
+            <div class="container">
+                <div class="si">
+                    <h1 class="mb-5">회원가입</h1>
+                </div>
+                <form action="" class="form" onkeydown="if(event.keyCode==13)return false">
+                    <div id="allForm">
+                        <div class="input">
+                            <label class="mb-4 form-control" id="name" for="name">아이디 <input minlength="5" class="btn1 name1" name="name" type="text" id="name"></label>
+                            <label class="mb-4 form-control" id="password1" for="password1">비밀번호 <input class="btn2 psd1" type="password" id="password1" name="password1"></label>
+                            <label class="mb-4 form-control" id="password2" for="password2">비밀번호 확인 <input class="btn2" type="password" id="password2" name="password2"></label>
+                            <label class="mb-4 form-control" id="email" for="email">이메일 <input class="btn1" type="email" id="email" name="email"></label>                
+                        </div>
+                        <div class="inputva">
+                            <label class="mb-4 form-control" for="inputVal2">보안문자입력 <input disabled type="text" id="inputVal2" name="inputVal2"></label>
+                            <label class="mb-4 form-control" for="inputVal">보안문자 <input id="inputVal" value="" type="text" disabled name="inputVal"></label>
+                        </div>   
+                        <div class="btn footer2 mt-5">
+                            <button type="button" class="prev">이전</button>
+                            <button type="button" id="sign_up">회원가입</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+            <div class="slide slide3">
+                    <div class="header_img row mt-5 mb-3">
+                        <h1 class="G1 col-1">G</h1>
+                        <h1 class="O1 col-1">O</h1>
+                        <h1 class="O2 col-1">O</h1>
+                        <h1 class="G2 col-1">G</h1>
+                        <h1 class="L1 col-1">L</h1>
+                        <h1 class="E1 col-1">E</h1>
+                    </div>
+                    <div class="second">
+                        <h4 class="h1_login mt-3 mb-3">로그인</h4>
+                        <h5 class="h3_move mb-5">Gmail로 이동</h5>
+                    </div>
+            
+                    <form class="form" onkeydown="if(event.keyCode==13)return false">
+                        
+                        <div class="email form-floating">
+                            <input class="form-control mb-3 email_inp" name="email_inp" type="text">
+                            <label for="email_inp">이메일</label>
+                            <p class="id_save mb-4 mt-2"><input checked class="id" type="checkbox">아이디 저장하기</p>
+                        </div>
+                        <div class="email form-floating ">
+                            <input class="form-control mb-3 ps_inp" type="password">
+                            <label for="floatingInputValue">비밀번호</label>
+                            <div class="chk_box">
+                                <p class="ps_save mb-5 mt-2"><input class="ps" type="checkbox">비밀번호 저장하기</p>
+                                <p class="auto_login mb-5 mt-2"><input class="auto_login1" type="checkbox">자동로그인</p>
+                            </div>
+                        </div>
+                        <div class="m-4">
+                            <a class="email_forget mb-5" href="./forgot_email.html">이메일을 잊으셨나요?</a> <br>
+                        <span class="span_com mt-5">내 컴퓨터가 아닌가요? 게스트 모드를 사용하여 비공개로 로그인 하세요. <a href="">게스트 모드 사용 방법 자세히 알아보기</a></span>
+                        </div>
+            
+                        <div class="footer m-4">
+                            <a href="../ex05_3/practice_sign.html">계정 만들기</a>
+                            <button class="mb-5 next_btn btn btn-primary">로그인</button>
+                        </div>
+                    </form>
+            </div>
+        </div>
+    </div>
+    <script src="./js/pra_slide.js"></script>
+</body>
+</html>

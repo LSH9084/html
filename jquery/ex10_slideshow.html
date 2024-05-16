@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>슬라이드쇼</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <style>
+        .container {
+            width: 500px; height: 500px;
+            margin-left: auto;
+            margin-right: auto;
+            position: relative;
+            overflow: hidden;
+        }
+        .slide_box {
+            width: 500px; height: 500px;
+            position: absolute;
+            /* overflow: hidden; */
+        }
+        .slide_show {
+            width: 500px; height: 500px;
+            float: left;
+            
+        }
+        .slide_show div {
+            width: 500px;height: 500px;
+            border: 1px solid black;
+            background-color: antiquewhite;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="slide_box">
+            <div class="slide_show">
+                <div class="slide1">
+                    <button class="btn1">앞으로</button>
+                    <button class="bbtn1">뒤로</button>
+                </div>
+                <div class="slide2">
+                    <button class="btn2">앞으로</button>
+                    <button class="bbtn2">뒤로</button>
+                </div>
+                <div class="slide3">
+                    <button class="btn3">앞으로</button>
+                    <button class="bbtn3">뒤로</button>
+                </div>
+                <div class="slide4">
+                    <button class="btn4">앞으로</button>
+                    <button class="bbtn4">뒤로</button>
+                </div>
+                <div class="slide5">
+                    <button class="btn5">앞으로</button>
+                    <button class="bbtn5">뒤로</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/slide_show.js"></script>
+</body>
+</html>
