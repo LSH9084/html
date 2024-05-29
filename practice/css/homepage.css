@@ -1,0 +1,147 @@
+.navbar-nav a {
+    margin-left: 30px;
+    margin-right: 30px;
+    padding-top: 120px;
+    color: white;
+}
+.logo {
+    text-decoration: none;
+    color: rgb(218, 177, 90);
+    font-size: 32px;
+    padding-bottom: 10px;
+    margin: 20px;
+}
+.nav {
+    margin-left: 236px;
+    
+}
+
+.container-fluid {
+    background-color: darkgray;
+}
+
+.container {
+    width: 1500px;
+}
+
+.navbar-nav a:active , .navbar-nav a:visited{
+    color: rgb(95, 131, 92);
+}
+
+.navbar-nav a:hover {
+    color: rgb(15, 56, 17);
+}
+
+.slide_box {
+    width: 824px;height: 300px;
+    /* border: 1px solid red; */
+    margin-right: auto; margin-left: auto;
+    position: relative;
+    overflow: hidden;
+    left: 0px;
+    top: 0px;
+  }
+
+.slide_show {
+    float: left;
+    display: flex;
+    width: 2490px;
+    height: 300px;
+    position: absolute;
+    
+}
+
+
+.slide_show .slide {
+width: 824px;height: 300px;
+top: 0;left: 0;
+background-size: cover;
+
+background-repeat: no-repeat;
+}
+.slide-1 {
+    background-image: url(../img/images.jpg);
+    
+    /* background-color: green; */
+}
+.slide-2 {
+background-image: url(../img/images2.jpg);
+/* background-color: red; */
+}
+.slide-3 {
+background-image: url(../img/images3.jpg);
+/* background-color: blue; */
+}
+.slide_box button {
+height: 300px;
+top: 0;
+border: none;
+padding: 20px;
+font-weight: 800;
+font-size: 24px;
+opacity: 1;
+color: black;
+}
+
+.tab-menu {
+    width: 824px;
+    margin: auto;
+    margin-top: 10px;
+}
+.tabs {
+    display: flex;
+    cursor: pointer;
+}
+.tab-link {
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    border-bottom: none;
+    transition: background-color 0.3s;
+}
+.tab-link:hover {
+    background-color: #ddd;
+}
+.tab-link.active {
+    background-color: #ccc;
+}
+.tab-content {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+.tab-pane {
+    display: none;
+}
+.tab-pane.active {
+    display: block;
+}
+
+.footer {
+    background-color: darkgray;
+    width: 824px;
+    margin: 0 auto;
+    margin-top: 10px;
+    height: 210px;
+}
+
+.logo1 {
+    color: antiquewhite;
+    font-weight: 800;
+    font-size: 25px;
+}
+
+.logo1 p {
+    padding-top: 20px;
+    margin-left: 35px;
+}
+
+.li li {
+    margin-left: 35px;
+}
+
+.li h7 {
+    margin-left: 35px;
+    text-decoration: underline;
+}
